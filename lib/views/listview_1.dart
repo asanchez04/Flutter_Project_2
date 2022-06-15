@@ -26,6 +26,26 @@ class ListView1 extends StatelessWidget {
         "img": "https://images.justwatch.com/backdrop/182870100/s640/hunter-x-hunter-2011",
         "name": "HunterxHunter"
       },
+      {
+        "img": "https://images.justwatch.com/backdrop/182870100/s640/hunter-x-hunter-2011",
+        "name": "HunterxHunter"
+      },
+      {
+        "img": "https://images.justwatch.com/backdrop/182870100/s640/hunter-x-hunter-2011",
+        "name": "HunterxHunter"
+      },
+      {
+        "img": "https://images.justwatch.com/backdrop/182870100/s640/hunter-x-hunter-2011",
+        "name": "HunterxHunter"
+      },
+      {
+        "img": "https://images.justwatch.com/backdrop/182870100/s640/hunter-x-hunter-2011",
+        "name": "HunterxHunter"
+      },
+      {
+        "img": "https://images.justwatch.com/backdrop/182870100/s640/hunter-x-hunter-2011",
+        "name": "HunterxHunter"
+      },
     ];
   
   @override
@@ -42,6 +62,23 @@ class ListView1 extends StatelessWidget {
               backgroundImage: Image.network(_anime[index]["img"]!).image,
             ),
             title: Text(_anime[index]["name"]!),
+            onTap: () => showDialog<String>(
+          context: context,
+          builder: (BuildContext context) => AlertDialog(
+            title: const Text('AlertDialog Title'),
+            content: const Text('AlertDialog description'),
+            actions: <Widget>[
+              TextButton(
+                onPressed: () => Navigator.pop(context, 'Cancel'),
+                child: const Text('Cancel'),
+              ),
+              TextButton(
+                onPressed: () => Navigator.pop(context, 'OK'),
+                child: const Text('OK'),
+              ),
+            ],
+          ),
+        )
           );
         }
       )
