@@ -43,7 +43,7 @@ class _CallFirebaseState extends State<CallFirebase> {
     callDatabase();
     return Scaffold(
       appBar: AppBar(
-        title: const Text("FIRE BASE LIST"),
+        title: const Text("CAT WASH LIST"),
         centerTitle: true,
       ),
       body: Center(
@@ -68,7 +68,6 @@ class _CallFirebaseState extends State<CallFirebase> {
       },
     );
   }
- 
 
   void callDatabase()async {
     final respuestas = await firebaseConnection.getAllRegistros();
