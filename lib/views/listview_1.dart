@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 class ListView1 extends StatelessWidget {
    
-  ListView1({Key? key}) : super(key: key);
+  const ListView1({Key? key}) : super(key: key);
   
-    final List<Map<String, String>> _anime = [
+    static final List<Map<String, String>> _anime = [
 
       {
         "img": "https://areajugones.sport.es/wp-content/uploads/2021/12/kimetsu-no-yaiba-anime-libro-de-arte-1.jpg",

@@ -5,11 +5,11 @@ import '../Entities/registros.dart';
 import '../domain/firebase_connection.dart';
 
 
-class CallFirebase extends StatefulWidget {
-  const CallFirebase({Key? key}) : super(key: key);
+class ShowDataBase extends StatefulWidget {
+  const ShowDataBase({Key? key}) : super(key: key);
 
   @override
-  State<CallFirebase> createState() => _CallFirebaseState();
+  State<ShowDataBase> createState() => _ShowDataBaseState();
 }
 void openAlertDialog(BuildContext context, Registros registros) {
     AlertDialog alert =
@@ -35,7 +35,7 @@ void openAlertDialog(BuildContext context, Registros registros) {
     showDialog(context: context, builder: (BuildContext context) => alert);
   }
 
-class _CallFirebaseState extends State<CallFirebase> {
+class _ShowDataBaseState extends State<ShowDataBase> {
   final firebaseConnection = FirebaseConnection();
   List<Registros> registros=[];
    @override
