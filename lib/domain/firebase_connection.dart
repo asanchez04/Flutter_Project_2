@@ -30,9 +30,9 @@ class FirebaseConnection {
     try {
       DatabaseReference _registros = instanceFirebase();
       DataSnapshot response = await _registros.get();
-      final otraenco = json.encode(response.value);
-      final pruebadeco = json.decode(otraenco);
-      final registers = ResponseFirebase.fromJson(pruebadeco.values.toList());
+      final stringjson = json.encode(response.value);
+      final realjson = json.decode(stringjson);
+      final registers = ResponseFirebase.fromJson(realjson.values.toList());
       return registers;
     } catch (e) {
       rethrow;
