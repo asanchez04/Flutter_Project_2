@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_poo_api/views/listview_1.dart';
+import 'package:flutter_poo_api/views/view_user.dart';
 import 'package:flutter_poo_api/views/vista_firebase.dart';
 
 class Menu extends StatefulWidget{
@@ -17,10 +18,11 @@ class _MenuS extends State<Menu>{
     TextStyle(fontSize: 24, fontWeight: FontWeight.bold);
 
   static const List<Widget> _widgetOptions = <Widget>[
-    Text('Index 0: Home',
-    style: optionStyle),
-    ShowDataBase(),
+    // Text('Index 0: Home',
+    // style: optionStyle),
     ListView1(),
+    ShowDataBase(),
+    ProfileView(),
   ];
 
   void _onItemTapped(int index){
