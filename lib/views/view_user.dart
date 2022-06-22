@@ -96,7 +96,7 @@ class ProfileView extends StatelessWidget {
 
   void notifyService(List<String> client) async {
     String _result =
-        await sendSMS(message: 'Su vehiculo ya esta ready', recipients: client)
+        await sendSMS(message: 'Su Carro ya se puedo ir a buscar!!', recipients: client)
             .catchError((onError) {
       print(onError);
     });
