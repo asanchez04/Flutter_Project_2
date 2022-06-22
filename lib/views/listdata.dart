@@ -18,10 +18,10 @@ class _ServicesListState extends State<ServicesList> {
   Widget build(BuildContext context) {
     fetchInfo();
     return Scaffold(
-        backgroundColor: const Color.fromARGB(234, 186, 221, 250),
+        backgroundColor: Color.fromARGB(234, 166, 176, 184),
         appBar: AppBar(
             title: const Center(
-          child: Text('Lista de datos de la db'),
+          child: Text('List database view'),
         )),
         body: Center(
           child: listData(),

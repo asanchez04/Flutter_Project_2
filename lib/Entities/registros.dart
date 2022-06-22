@@ -27,7 +27,7 @@ class Registros{
       carro: json['Carro']!= null ? Carro.fromJson(json['Carro']) : null,
       servicio: json['Servicio'] != null ? Servicio.fromJson(json['Servicio']): null,
       apellido: json['apellido'],
-      cel: json['cell'],
+      cel: json['cel'],
       licencia: json['licencia'],
       nombre: json['nombre'],
       image: json['image'],

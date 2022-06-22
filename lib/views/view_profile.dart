@@ -112,7 +112,7 @@ class ProfileView extends StatelessWidget {
                       ),
                       Text(
                           "Licencia de conduccion # ${registry.licencia!}"),
-                      Text("Numero de contacto # ${registry.cel}"),
+                      Text("Numero de contacto # ${registry.cel.toString()}"),
                     ]),
               ),
             ),

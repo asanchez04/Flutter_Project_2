@@ -24,7 +24,7 @@ class CustomCard2 extends StatelessWidget {
                   height: 10,
                 ),
                 CircleAvatar(
-                  backgroundColor: Color.fromARGB(255, 139, 215, 250),
+                  backgroundColor: Color.fromARGB(255, 4, 171, 249),
                   minRadius: 40.0,
                   child: CircleAvatar(
                     radius: 30.0,
